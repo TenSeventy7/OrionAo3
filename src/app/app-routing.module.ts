@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { CheckTutorial } from './providers/check-tutorial.service';
 
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/welcome',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
     loadChildren: () => import('./home/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
@@ -13,6 +19,11 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () => import('./screens/about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./screens/welcome/tutorial.module').then(m => m.TutorialModule),
+    canLoad: [CheckTutorial]
   },
 ];
 

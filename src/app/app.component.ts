@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
-
-import { Platform } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { MenuController, Platform, ToastController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Storage } from '@ionic/storage';
+
+import { UserData } from './providers/user-data';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +15,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   constructor(
     private platform: Platform,
+    private router: Router,
+    private storage: Storage,
+    private userData: UserData,
+    private toastCtrl: ToastController,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
@@ -22,7 +29,11 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      this.statusBar.backgroundColorByHexString("#fefefe");
     });
+  }
+
+  openTutorial() {
+    this.storage.set('ion_did_tutorial', false);
+    this.router.navigateByUrl('/tutorial');
   }
 }

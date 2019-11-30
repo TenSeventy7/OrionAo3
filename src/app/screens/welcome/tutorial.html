@@ -1,0 +1,42 @@
+<div class="arion-sep-5"></div>
+<div class="arion-sep-1p5"></div>
+<ion-content class="ion-justify-content-center">
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false" class="ion-padding ion-justify-content-center">
+    <ion-slide>
+      <div class="arion-sep-10"></div>
+      <img src="assets/images/welcome/press-icon-vector.svg" class="welcome-image slide-image" />
+      <div class="arion-sep-15"></div>
+      <h2 class="slide-title">
+        Say hello to Arion
+      </h2>
+      <p>
+        Welcome to a new Archive of Our Own (AO3) reading experience!
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="arion-sep-20"></div>
+      <lottie-player autoplay loop src="/assets/images/welcome/device-morph-lottie.json"></lottie-player>
+      <h2 class="slide-title">Read anywhere</h2>
+      <p>
+        Read works on your phone, tablet, desktop, or laptop. Arion (with AO3) follows you wherever, whenever you may be.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/images/welcome/shipping-package-colour.svg" class="slide-image" />
+      <h2 class="slide-title">Enjoy reading!</h2>
+      <ion-button fill="clear" (click)="startApp()">
+        Start browsing
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer no-border class="ion-padding">
+  <ion-toolbar>
+    <ion-buttons slot="end" class="ion-padding">
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
