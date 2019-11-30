@@ -1,5 +1,7 @@
 {
   "name": "ArionAo3",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
