@@ -1,16 +1,14 @@
 ![app icon](https://i.ibb.co/9nPMGQp/ic-arion-launcher-square.png)
 # Arion (ArionIonAo3)
 
-Arion is a PWA/Cordova client for [Archive of Our Own](https://archiveofourown.org) made with the Ionic Framework.
- 
+Arion is a mobile client for the [Archive of Our Own](https://archiveofourown.org) . Written in Angular and with the Ionic Framework.
 
 ## Pre-requisites
 * Ionic Framework 4
-* node.js 12.x or higher
+* node.js 13.x or higher
 * npm 6 or higher
 
 ## Installation
-
 Refer from [Ionic](https://ionicframework.com/docs/installation/cli)'s documentation to install Ionic.
 
 After cloning this repository, initialize the project's directory with Ionic.
@@ -22,7 +20,27 @@ Then install the dependencies.
 npm install 
 ```
 
-## Usage
+## Building the App
+As this is built with Ionic Capacitor, build all components first then sync them before compiling.
+```bash
+ionic build
+npx cap copy
+npx cap sync
+```
+
+Capacitor does not have a native way to build using the CLI. Build it using Android Studio and/or Xcode instead.
+```bash
+npx cap copy android
+npx cap open android
+```
+
+My repository doesn't currently have iOS support out-of-the-box. You can add it yourself.
+```bash
+npx cap add ios
+npx cap copy ios
+npx cap open ios
+```
+
 Refer to [Ionic](https://ionicframework.com/docs) and [Angular](https://angular.io/docsdocumentation)'s documentation to modify and/or use this app.
 
 ## Contributing
