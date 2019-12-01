@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuController, Platform, ToastController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Storage } from '@ionic/storage';
 import { Plugins, StatusBarStyle } from '@capacitor/core';
 
@@ -22,21 +21,18 @@ export class AppComponent {
     private storage: Storage,
     private userData: UserData,
     private toastCtrl: ToastController,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private splashScreen: SplashScreen
   ) {
-    isStatusBarLight = true
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
 
       Plugins.StatusBar.setStyle({
       style: StatusBarStyle.Light });
       StatusBar.setBackgroundColor({ color: `#fefefe` });
-      
+
       this.splashScreen.hide();
     });
   }
