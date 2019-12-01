@@ -1,9 +1,7 @@
 image: jangrewe/gitlab-ci-android
 
 stages:
-  - prepare
   - build
-  - release
 
 before_script:
   - export GRADLE_USER_HOME=$(pwd)/.gradle
@@ -16,26 +14,18 @@ cache:
     - node_modules/
     
 prepare_node:
-  stage: prepare
+  stage: build
   script:
     - curl -sL https://deb.nodesource.com/setup_13.x | bash -
     - apt-get install -y nodejs
     - npm install -g ionic
     - npm install i -g cordova
-
-build_www:
-  stage: build
-  script:
     - ls
     - npm install
     - rm -rf "www"
     - ionic build
     - npx cap copy
     - npx cap sync
-
-ci_android:
-  stage: release
-  script:
     - npx cap copy android
     - cd ./android
     - ./gradlew assembleRelease
@@ -49,4 +39,3 @@ ci_android:
   artifacts:
     paths:
       - android/app/build/outputs/apk/release
-      
