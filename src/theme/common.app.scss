@@ -185,7 +185,17 @@ ion-tab-button[aria-selected=true] .arion-tab-sel {
 }
 
 .arion-toolbar {
-  background-color: var(--ion-background-color) !important;
-  background: var(--ion-background-color) !important;
-  --background: var(--ion-background-color) !important;
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  background: rgba(0, 0, 0, 0.0) !important;
+  --background: rgba(0, 0, 0, 0.0) !important;
+}
+ion-list {
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  background: rgba(0, 0, 0, 0.0) !important;
+  --background: rgba(0, 0, 0, 0.0) !important;
+}
+ion-item {
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  background: rgba(0, 0, 0, 0.0) !important;
+  --background: rgba(0, 0, 0, 0.0) !important;
 }
