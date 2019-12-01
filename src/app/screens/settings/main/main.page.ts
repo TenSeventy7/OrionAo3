@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { defaultTheme, darkTheme } from '../../../providers/theme-switcher.service';
+import { ToggleThemes } from 'ionic-angular-theme-switch';
 
 @Component({
   selector: 'app-main',
@@ -12,4 +14,8 @@ export class MainPage implements OnInit {
   ngOnInit() {
   }
 
+  public themes: ToggleThemes = {
+    default: {},
+    alternative: darkTheme
+  };
 }

@@ -183,3 +183,9 @@ ion-tab-button[aria-selected=true] .arion-tab-sel {
   width: auto;
   height: 120vh;
 }
+
+.arion-toolbar {
+  background-color: var(--ion-background-color) !important;
+  background: var(--ion-background-color) !important;
+  --background: var(--ion-background-color) !important;
+}

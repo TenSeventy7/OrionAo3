@@ -13,7 +13,7 @@ const routes: Routes = [
     loadChildren: () => import('./home/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'main',
+    path: 'settings/main',
     loadChildren: () => import('./screens/settings/main/main.module').then( m => m.MainPageModule)
   },
   {

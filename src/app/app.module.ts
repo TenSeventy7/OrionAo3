@@ -16,12 +16,14 @@ import { IonicStorageModule } from '@ionic/storage';
 import { FormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 import { defineCustomElements } from '@teamhive/lottie-player/loader';
+import { IonicAngularThemeSwitchService, IonicAngularThemeSwitchToggleModule } from 'ionic-angular-theme-switch';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, 
   IonicStorageModule.forRoot(),
+  IonicAngularThemeSwitchToggleModule.forRoot(),
   IonicModule.forRoot({
     mode: 'md'
 }), 
@@ -29,6 +31,7 @@ import { defineCustomElements } from '@teamhive/lottie-player/loader';
   providers: [
     StatusBar,
     SplashScreen,
+    IonicAngularThemeSwitchService,
     Toast,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
