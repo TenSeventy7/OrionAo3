@@ -4,10 +4,11 @@ import { MenuController, Platform, ToastController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { Storage } from '@ionic/storage';
 import { Plugins, StatusBarStyle } from '@capacitor/core';
-
+import { NavigationBarPlugin } from 'capacitor-navigationbar';
 import { UserData } from './providers/user-data';
 
 const { StatusBar } = Plugins;
+const NavigationBar = Plugins.NavigationBar as NavigationBarPlugin;
 
 @Component({
   selector: 'app-root',
@@ -32,6 +33,7 @@ export class AppComponent {
       Plugins.StatusBar.setStyle({
       style: StatusBarStyle.Light });
       StatusBar.setBackgroundColor({ color: `#fefefe` });
+      NavigationBar.setBackgroundColor({color: '#FFFEFEFE'});
 
       this.splashScreen.hide();
     });
