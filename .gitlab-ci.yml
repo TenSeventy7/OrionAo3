@@ -1,4 +1,4 @@
-image: debian:stretch
+image: jangrewe/gitlab-ci-android
 
 stages:
   - prepare
@@ -14,30 +14,6 @@ cache:
   key: "$CI_PROJECT_ID"
   paths:
     - node_modules/
-
-prepare_android_tools:
-  stage: prepare
-  script:
-    - mkdir -p /opt/android/sdk && mkdir .android
-    - cd /opt/android/sdk && curl -o sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip && unzip sdk.zip && rm sdk.zip
-    - yes | /opt/android/sdk/tools/bin/sdkmanager --licenses
-    - /opt/android/sdk/tools/bin/sdkmanager --update > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager platform-tools > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager tools > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager emulator > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager "extras;android;m2repository" > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager "extras;google;m2repository" > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager "extras;google;google_play_services" > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager "build-tools;28.0.3" > /dev/null
-    - /opt/android/sdk/tools/bin/sdkmanager "platforms;android-28" > /dev/null
-    
-prepare_gradle:
-  stage: prepare
-  script:
-    - apt-get update && apt-get install -y zip
-    - curl -L -Of https://services.gradle.org/distributions/gradle-4.7-bin.zip
-    - mkdir /opt/gradle
-    - unzip -d /opt/gradle gradle-4.7-bin.zip
     
 prepare_node:
   stage: prepare
@@ -73,3 +49,4 @@ ci_android:
   artifacts:
     paths:
       - android/app/build/outputs/apk/release
+      
