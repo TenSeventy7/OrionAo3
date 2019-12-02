@@ -62,7 +62,12 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.splashScreen.hide();
+     Plugins.StatusBar.setStyle({
+       style: StatusBarStyle.Dark
+     });
+     StatusBar.setBackgroundColor({ color: `#fefefe` });
+     NavigationBar.setBackgroundColor({color: '#FFFEFEFE'});
+	  this.splashScreen.hide();
     });
   }
 
