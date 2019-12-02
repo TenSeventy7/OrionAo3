@@ -1,7 +1,7 @@
-![app icon](https://i.ibb.co/9nPMGQp/ic-arion-launcher-square.png)
-# Arion (ArionIonAo3)
+![app icon](https://gitlab.com/TenSeventy7/ArionAo3/raw/master/press/ic_launcher-web.png)
+# Arion (ArionAo3)
 
-Arion is a mobile client for the [Archive of Our Own](https://archiveofourown.org) . Written in Angular and with the Ionic Framework.
+Arion is a mobile client for the [Archive of Our Own](https://archiveofourown.org). Written in Angular and with the Ionic Framework.
 
 ## Pre-requisites
 * Ionic Framework 4
@@ -44,7 +44,7 @@ npx cap open ios
 Refer to [Ionic](https://ionicframework.com/docs) and [Angular](https://angular.io/docsdocumentation)'s documentation to modify and/or use this app.
 
 ## Contributing
-For people viewing, forking, or cloning this repository using its [GitHub](https://github.com/TenSeventy7/ArionAo3) mirrors, **never report your issues or make pull requests there.** These are only mirrors and are not monitored for bug reports and pull requests. Please directly make commits on GitLab so I can merge your commits.
+For people viewing, forking, or cloning this repository using its [GitHub](https://github.com/TenSeventy7/ArionAo3) and [Bitbucket](https://bitbucket.org/TenSeventy7/arion-ao3) mirrors, **never report your issues or make pull requests there.** These are only mirrors and are not monitored for bug reports and pull requests. Please directly make commits on GitLab so I can merge your commits.
 
 I haven't implemented a way to actually search and browse AO3 for this app. Reasons include AO3's current lack of a proper API and time from my part.
 
@@ -53,4 +53,4 @@ Pull requests are always welcome. For major changes, please open an issue first 
 Please make sure to test code before opening a pull request as to make merging efficient and convenient for everyone. Always remember to keep your code merged with current sources as well.
 
 ## License
-Arion is licensed in [GPLv3](https://github.com/TenSeventy7/ArionIonAo3/raw/master/LICENSE)
+Arion is licensed in [GPLv3](https://gitlab.com/TenSeventy7/ArionAo3/raw/master/LICENSE)
