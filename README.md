@@ -1,4 +1,4 @@
-![app icon](https://gitlab.com/TenSeventy7/ArionAo3/raw/master/press/ic_launcher-web.png)
+![app icon](https://gitlab.com/TenSeventy7/arion-ao3/raw/master/press/ic_launcher-web.png?inline=false)
 # Arion (ArionAo3)
 
 Arion is a mobile client for the [Archive of Our Own](https://archiveofourown.org). Written in Angular and with the Ionic Framework.
@@ -53,4 +53,4 @@ Pull requests are always welcome. For major changes, please open an issue first 
 Please make sure to test code before opening a pull request as to make merging efficient and convenient for everyone. Always remember to keep your code merged with current sources as well.
 
 ## License
-Arion is licensed in [GPLv3](https://gitlab.com/TenSeventy7/ArionAo3/raw/master/LICENSE)
+Arion is licensed in [GPLv3](https://gitlab.com/TenSeventy7/arion-ao3/raw/master/LICENSE)
