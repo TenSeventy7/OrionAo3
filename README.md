@@ -1,4 +1,4 @@
-![app icon](https://gitlab.com/TenSeventy7/arion-ao3/raw/master/press/ic_launcher-web.png?inline=false)
+![app icon](https://gitlab.com/TenSeventy7/arion-ao3/raw/master/press/android/mipmap-xhdpi/ic_launcher.png)
 # Arion (ArionAo3)
 
 Arion is a mobile client for the [Archive of Our Own](https://archiveofourown.org). Written in Angular and with the Ionic Framework.
