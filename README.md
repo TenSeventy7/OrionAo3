@@ -44,7 +44,7 @@ npx cap open ios
 Refer to [Ionic](https://ionicframework.com/docs) and [Angular](https://angular.io/docsdocumentation)'s documentation to modify and/or use this app.
 
 ## Contributing
-For people viewing, forking, or cloning this repository using its [GitHub](https://github.com/TenSeventy7/ArionAo3) and [Bitbucket](https://bitbucket.org/TenSeventy7/arion-ao3) mirrors, **never report your issues or make pull requests there.** These are only mirrors and are not monitored for bug reports and pull requests. Please directly make commits on GitLab so I can merge your commits.
+For people viewing, forking, or cloning this repository using its [GitHub](https://github.com/TenSeventy7/ArionAo3) and [Bitbucket](https://bitbucket.org/tenseventy7/arionao3) mirrors, **never report your issues or make pull requests there.** These are only mirrors and are not monitored for bug reports and pull requests. Please directly make commits on GitLab so I can merge your commits.
 
 I haven't implemented a way to actually search and browse AO3 for this app. Reasons include AO3's current lack of a proper API and time from my part.
 
