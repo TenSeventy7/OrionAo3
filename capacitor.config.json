@@ -11,7 +11,7 @@
   },
   "ios": {
     "backgroundColor": "#fff2f2f2"
-  }
+  },
   "cordova": {},
   "plugins": {
     "SplashScreen": {
