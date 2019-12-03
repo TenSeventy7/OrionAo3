@@ -9,10 +9,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
     path: 'settings/main',
     loadChildren: () => import('./screens/settings/main/main.module').then( m => m.MainPageModule)
   },
@@ -24,6 +20,14 @@ const routes: Routes = [
     path: 'welcome',
     loadChildren: () => import('./screens/welcome/tutorial.module').then(m => m.TutorialModule),
     canLoad: [CheckTutorial]
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./screens/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'home/tabs/discover',
+    loadChildren: () => import('./screens/home/home.module').then( m => m.HomePageModule)
   },
 ];
 

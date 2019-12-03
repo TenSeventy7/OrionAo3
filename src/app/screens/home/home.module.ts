@@ -1,19 +1,22 @@
 import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ArionAccountTab } from './account.page';
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
 import { LoginComponent } from '../../components/login/login.component';
+import { HomePageRoutingModule } from './home-routing.module';
+
+import { HomePage } from './home.page';
 
 @NgModule({
   entryComponents: [LoginComponent],
   imports: [
-    IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: ArionAccountTab }])
+    IonicModule,
+    SuperTabsModule,
+    HomePageRoutingModule
   ],
-  declarations: [ArionAccountTab, LoginComponent]
+  declarations: [HomePage, LoginComponent]
 })
-export class ArionAccountTabPageModule {}
+export class HomePageModule {}
