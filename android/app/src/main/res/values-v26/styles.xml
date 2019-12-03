@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="SplashActivity.Theme" parent="AppTheme.NoActionBar">
-        <item name="android:background">@drawable/arion_activity_splash</item>
+        <item name="android:background">@drawable/tenseventyseven_app_splash</item>
 		<item name="android:windowLightStatusBar">true</item>
 		<item name="android:windowLightNavigationBar">true</item>
 		<item name="android:statusBarColor">@color/splash_background</item>

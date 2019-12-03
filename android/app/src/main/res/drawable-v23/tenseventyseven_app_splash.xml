@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@color/splash_background" />
+	<item>
+		<bitmap
+			android:src="@mipmap/tenseventyseven_product_logo_arion" android:gravity="center" />
+	</item>
+	<item android:bottom="52dp">
+		<bitmap 
+			android:src="@mipmap/tenseventyseven_dev_logo" android:gravity="bottom" />
+	</item>
+</layer-list>

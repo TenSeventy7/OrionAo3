@@ -13,7 +13,7 @@ cache:
   paths:
     - node_modules/
     
-prepare_node:
+compile_deb:
   stage: build
   script:
     - curl -sL https://deb.nodesource.com/setup_13.x | bash -
@@ -23,6 +23,8 @@ prepare_node:
     - ls
     - npm install
     - rm -rf "www"
+    - rm -rf "./android/app/build"
+    - rm -rf "./android/build"
     - ionic build
     - npx cap copy
     - npx cap sync
