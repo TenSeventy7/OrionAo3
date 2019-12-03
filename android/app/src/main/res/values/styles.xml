@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#A30A0B</item>
+        <item name="colorPrimaryDark">#dc4934</item>
+        <item name="colorAccent">#3CC494</item>
     </style>
 
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
@@ -16,9 +13,12 @@
     </style>
 
     <style name="AppTheme.NoActionBarLaunch" parent="AppTheme.NoActionBar">
-        <item name="android:background">@drawable/splash</item>
-		<item name="android:windowLightStatusBar">true</item>
-		<item name ="android:windowBackground">@color/splash_background</item>
-		<item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:background">@drawable/launch_splash</item>
+    </style>
+    <style name="SplashActivity.Theme" parent="AppTheme.NoActionBar">
+        <item name="android:background">@drawable/arion_activity_splash</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
     </style>
 </resources>
