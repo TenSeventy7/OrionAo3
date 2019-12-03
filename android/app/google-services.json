@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691313042370",
+    "firebase_url": "https://arion-ao3.firebaseio.com",
+    "project_id": "arion-ao3",
+    "storage_bucket": "arion-ao3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691313042370:android:ccb24ee03f8dca8d93ec5b",
+        "android_client_info": {
+          "package_name": "io.tenseventyseven.arion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691313042370-c20gar401pndqr9spg53ltikc67u2clk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA43vPN_jv2cx5dcm1AyZ9yJb7Vj9Bzm9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691313042370-c20gar401pndqr9spg53ltikc67u2clk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
