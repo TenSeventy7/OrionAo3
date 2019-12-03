@@ -13,10 +13,10 @@
     </style>
 
     <style name="AppTheme.NoActionBarLaunch" parent="AppTheme.NoActionBar">
-        <item name="android:background">@drawable/launch_splash</item>
+        <item name="android:background">@color/splash_background</item>
     </style>
     <style name="SplashActivity.Theme" parent="AppTheme.NoActionBar">
-        <item name="android:background">@drawable/tenseventyseven_app_splash</item>
+        <item name="android:background">@drawable/splash</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowBackground">@color/splash_background</item>
         <item name="android:statusBarColor">@color/splash_background</item>
