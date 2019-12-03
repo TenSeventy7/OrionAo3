@@ -1,3 +1,5 @@
+package io.tenseventyseven.arion
+
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
@@ -14,8 +16,8 @@ class SplashActivity: AppCompatActivity() {
         Handler().postDelayed(
                 {
                     
-					val intent = Intent(this, ArionActivity::class.java)
-					startActivity(intent)
+                    val intent = Intent(this, ArionActivity::class.java)
+                    startActivity(intent)
                     finish()
                 },
                 splashScreenDuration
