@@ -199,3 +199,7 @@ ion-item {
   background: rgba(0, 0, 0, 0.0) !important;
   --background: rgba(0, 0, 0, 0.0) !important;
 }
+
+ion-card {
+  --background: var(--ion-card-md-color) !important;
+}
