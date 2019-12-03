@@ -4,5 +4,19 @@
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
+  "backgroundColor": "#fff2f2f2",
+  "android": {
+    "backgroundColor": "#fff2f2f2",
+    "allowMixedContent": true
+  },
+  "ios": {
+    "backgroundColor": "#fff2f2f2"
+  }
   "cordova": {}
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false,
+      "showSpinner": false
+    }
+  }
 }
