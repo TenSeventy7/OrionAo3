@@ -9,10 +9,8 @@ import android.content.Intent
 class SplashActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
         super.onCreate(savedInstanceState)
         scheduleSplashScreen()
-
     }
 
     private fun scheduleSplashScreen() {
