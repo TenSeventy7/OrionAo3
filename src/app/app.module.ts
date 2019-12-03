@@ -13,21 +13,28 @@ import { Toast } from '@ionic-native/toast/ngx';
 import { HttpClientModule } from '@angular/common/http';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { IonicStorageModule } from '@ionic/storage';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 import { defineCustomElements } from '@teamhive/lottie-player/loader';
 import { IonicAngularThemeSwitchService, IonicAngularThemeSwitchToggleModule } from 'ionic-angular-theme-switch';
+import { MaterialModule } from './modules/angular-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, 
+  imports: [
+  BrowserModule,
+  MaterialModule,
+  ReactiveFormsModule, 
   IonicStorageModule.forRoot(),
   IonicAngularThemeSwitchToggleModule.forRoot(),
   IonicModule.forRoot({
     mode: 'md'
-}), 
-  AppRoutingModule],
+  }), 
+  AppRoutingModule,
+  BrowserAnimationsModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
