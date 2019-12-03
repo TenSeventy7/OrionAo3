@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 	<item android:drawable="@color/splash_background" />
-	<item android:width="144dp" android:height="133dp" android:bottom="24dp" aandroid:drawable="@mipmap/tenseventyseven_product_logo_arion" android:gravity="center" />
+	<item android:width="144dp" android:height="133dp" android:bottom="24dp" android:drawable="@mipmap/tenseventyseven_product_logo_arion" android:gravity="center" />
 	<item android:bottom="52dp" android:width="48dp" android:height="48dp" android:drawable="@mipmap/tenseventyseven_dev_logo" android:gravity="bottom" />
 </layer-list>
