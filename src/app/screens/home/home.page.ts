@@ -35,7 +35,7 @@ export class HomePage implements OnInit {
       allowElementScroll: true,
       shortSwipeDuration: 0,
       avoidElements: true,
-      sideMenuThreshold: 100,
+      sideMenuThreshold: 999,
       sideMenu: "both",
   };
 

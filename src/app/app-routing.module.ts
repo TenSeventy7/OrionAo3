@@ -25,6 +25,22 @@ const routes: Routes = [
     loadChildren: () => import('./screens/welcome/tutorial.module').then(m => m.TutorialModule),
     canLoad: [CheckTutorial]
   },
+  {
+    path: 'search',
+    loadChildren: () => import('./screens/search/search.module').then( m => m.SearchPageModule)
+  },
+  {
+    path: 'preview',
+    loadChildren: () => import('./screens/work/preview/preview.module').then( m => m.PreviewPageModule)
+  },
+  {
+    path: 'reader',
+    loadChildren: () => import('./screens/work/reader/reader.module').then( m => m.ReaderPageModule)
+  },
+  {
+    path: 'detail',
+    loadChildren: () => import('./screens/user/detail/detail.module').then( m => m.DetailPageModule)
+  },
 ];
 
 @NgModule({

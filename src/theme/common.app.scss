@@ -132,7 +132,7 @@
   display: none; 
 }
 
-ion-tab-button[aria-selected=true] .arion-tab-sel {
+super-tab-button[aria-selected=true] .arion-tab-sel {
   border-bottom: 5px solid var(--ion-color-primary);
 }
 
@@ -141,6 +141,15 @@ ion-tab-button[aria-selected=true] .arion-tab-sel {
   height: 6px;
   position:absolute;
   bottom: 0;
+}
+
+super-tabs-toolbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  height: 52px !important;
+}
+
+super-tab-button {
+  height: 52px !important;
 }
 
 .app-icon {
