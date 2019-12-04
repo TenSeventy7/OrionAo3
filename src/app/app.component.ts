@@ -66,10 +66,7 @@ export class AppComponent {
      });
      StatusBar.setBackgroundColor({ color: `#fefefe` });
      NavigationBar.setBackgroundColor({color: '#FFFEFEFE'});
-     SplashScreen.show({
-      showDuration: 2000,
-      autoHide: true
-      });
+     SplashScreen.hide();
     });
   }
 
