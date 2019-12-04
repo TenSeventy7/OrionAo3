@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 	<item android:drawable="@color/splash_background" />
-	<item android:width="128dp" android:height="128dp" android:bottom="36dp" android:gravity="center">
-    	<bitmap android:width="128dp" android:height="128dp" android:src="@drawable/tenseventyseven_product_logo_arion" android:gravity="center"/>
-    </item>
-	<item android:bottom="52dp" android:width="36dp" android:height="36dp" android:drawable="@mipmap/tenseventyseven_dev_logo" android:gravity="bottom|center" />
+	<item android:bottom="48dp" android:width="144dp" android:height="144dp" android:drawable="@mipmap/tenseventyseven_product_logo_arion" android:gravity="center" />
+	<item android:bottom="64dp" android:width="36dp" android:height="36dp" android:drawable="@mipmap/tenseventyseven_dev_logo" android:gravity="bottom|center" />
 </layer-list>
