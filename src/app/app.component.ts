@@ -37,7 +37,7 @@ export class AppComponent {
          style: StatusBarStyle.Dark
        });
        StatusBar.setBackgroundColor({ color: `#121212` });
-       NavigationBar.setBackgroundColor({color: '#FF121212'});
+       NavigationBar.setBackgroundColor({color: '#FF1E1E1E'});
         } else {
        Plugins.StatusBar.setStyle({
          style: StatusBarStyle.Light
