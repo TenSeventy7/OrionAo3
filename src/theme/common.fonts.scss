@@ -154,8 +154,8 @@ font-weight: normal;
 src: local('Roboto Black Italic'), url('/assets/fonts/roboto/Roboto-BlackItalic.ttf') format('truetype');
 }
 
-p, span, ion-label {
-   font-family: 'Roboto Regular';
+p, span, ion-label, ion-text {
+   font-family: 'Roboto Regular' !important;
  }
 
 ion-title, h1, h2, h3, ion-card-title, ion-list-header {
