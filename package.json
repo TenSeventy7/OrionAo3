@@ -48,6 +48,7 @@
     "@ionic-native/in-app-browser": "^5.0.0-beta.15",
     "@ionic-native/toast": "^5.17.1",
     "@ionic/angular-toolkit": "^2.1.1",
+    "@ionic/lab": "2.0.16",
     "@ionic/storage": "^2.2.0",
     "@teamhive/lottie-player": "^1.0.0",
     "@types/jasmine": "~3.3.8",
