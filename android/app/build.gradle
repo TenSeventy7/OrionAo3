@@ -8,6 +8,8 @@ android {
     defaultConfig {
         applicationId "io.tenseventyseven.arion"
         minSdkVersion 23
+        versionCode "$CIVERCODE"
+        versionName "ci_$CIVERCODE"
         targetSdkVersion 29
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

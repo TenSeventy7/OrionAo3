@@ -16,6 +16,7 @@ cache:
 android_debug:
   stage: build
   script:
+    - export CIVERCODE=1
     - curl -sL https://deb.nodesource.com/setup_13.x | bash -
     - apt-get install -y nodejs
     - npm install -g ionic
