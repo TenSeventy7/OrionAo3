@@ -64,6 +64,93 @@
   margin-right: -8% !important;
 }
 
+.arion-story-preview-title-contatiner {
+  padding-bottom: 0% !important;
+}
+.arion-story-preview-desc-contatiner {
+  margin-top: -2% !important;
+}
+.arion-story-preview-subtitle-contatiner {
+  padding-top: -4% !important;
+}
+.arion-story-preview-author-contatiner {
+  padding-top: 0% !important;
+  margin-top: -5% !important;
+  margin-left: -0.5% !important;
+}
+.arion-story-preview-button-contatiner {
+  padding: 0% !important;
+  height: 82px !important;
+  margin-top: -4% !important;
+  background: var(--ion-card-md-color) !important;
+  display: flex!important;
+  align-content: center!important;
+  align-items: center!important;
+}
+.arion-story-preview-button-row-contatiner {
+  --ion-grid-column-padding: 5px !important;
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+}
+.arion-story-preview-button {
+  height: 76px !important;
+  width: 76px !important;
+  align-content: center!important;
+  align-items: center!important;
+  text-align: center!important;
+  --ion-grid-column-padding: 1px !important;
+}
+.arion-story-preview-icon {
+  font-size: 24px !important;
+}
+.arion-story-preview-icon-text {
+  font-size: 8sp !important;
+  display: flex !important;
+  overflow: visible !important;
+  justify-content: center;
+}
+.arion-story-preview-author-img {
+  width: 24px !important;
+  height: 24px !important;
+}
+.arion-story-preview-author-name {
+  font-size: 8sp !important;
+}
+.arion-story-preview-col-contatiner {
+  align-self: flex-start;
+}
+.arion-story-preview-right-button {
+  margin-bottom: -17px !important;
+  top: 0% !important;
+  height: 48px !important;
+  width: 48px !important;
+  margin-right: -6% !important;
+}
+.arion-story-preview-title {
+  margin-left: 5% !important;
+  margin-top: 6% !important;
+}
+.arion-story-preview-right-text {
+  right: 9% !important;
+  position: absolute !important;
+}
+.arion-story-preview-subtitle {
+  margin-left: 7% !important;
+}
+.arion-story-preview-description-contatiner {
+  margin-top: 0% !important;
+  padding-left: 7% !important;
+  padding-right: 7% !important;
+}
+.arion-story-preview-header-text {
+  font-size: 105%;
+}
+.arion-preview-header {
+  margin-bottom: -5% !important;
+  margin-left: 3.7% !important;
+  margin-right: 3.7% !important;
+}
+
 .arion-discover-header-text {
   font-size: 120%;
 }
