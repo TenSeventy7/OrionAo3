@@ -19,7 +19,10 @@
   </super-tabs-toolbar>
   <super-tabs-container>
     <super-tab>
-      <ion-content class="scroller" no-bounce [scrollEvents]="true" (ionScroll)="onScroll($event)">
+      <ion-header class="arion-statusbar-shadow">
+          <div class="arion-statusbar-shadow"></div>
+      </ion-header>
+      <ion-content class="scroller" no-bounce>
         <ion-header no-border mode="ios" class="arion-toolbar ios ion-padding">
           <ion-toolbar mode="ios" class="arion-toolbar ios">
             <ion-buttons slot="secondary">
@@ -34,8 +37,8 @@
 
 
         <ion-grid class="arion-discover-header ion-padding">
-          <ion-row><ion-col><h3 class="product-sans-header arion-discover-header-text">Recently Read</h3></ion-col>
-            <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
+          <ion-row><ion-col class="arion-story-preview-col-contatiner"><h3 class="product-sans-header arion-discover-header-text">Recently Read</h3></ion-col>
+            <ion-col class="arion-story-preview-col-contatiner"><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
           </ion-row>
           </ion-grid>
 
@@ -77,7 +80,7 @@
           </div>
       </div>
         <ion-grid class="arion-discover-header ion-padding">
-          <ion-row><ion-col><h3 class="product-sans-header arion-discover-header-text">Latest Updates</h3></ion-col>
+          <ion-row><ion-col><h3 class="product-sans-header arion-discover-header-text">Latest</h3></ion-col>
             <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
           </ion-row>
           </ion-grid>
@@ -166,7 +169,10 @@
       </ion-content>
     </super-tab>
     <super-tab>
-      <ion-content class="scroller" no-bounce id="search-panel" [scrollEvents]="true" (ionScroll)="onScroll($event)">
+      <ion-header class="arion-statusbar-shadow">
+          <div class="arion-statusbar-shadow"></div>
+      </ion-header>
+      <ion-content class="scroller" no-bounce id="search-panel">
         <ion-header no-border mode="ios" class="arion-toolbar ios ion-padding">
           <ion-toolbar mode="ios" class="arion-toolbar ios">
 
@@ -272,6 +278,9 @@
       </ion-content>
     </super-tab>
     <super-tab>
+      <ion-header class="arion-statusbar-shadow">
+          <div class="arion-statusbar-shadow"></div>
+      </ion-header>
       <ion-header>
         <ion-toolbar>
           <ion-title>
@@ -283,10 +292,10 @@
       <ion-content></ion-content>
     </super-tab>
     <super-tab>
-      <ion-header class="arion-statusbar-shadow" [class.arion-statusbar-shadow-hide]="hideToolbar">
+      <ion-header class="arion-statusbar-shadow">
           <div class="arion-statusbar-shadow"></div>
       </ion-header>
-      <ion-content class="scroller" no-bounce class="ion-padding" [scrollEvents]="true" (ionScroll)="onScroll($event)">
+      <ion-content class="scroller" no-bounce class="ion-padding">
           <div class="ion-margin-vertical"></div>
           <div class="arion-sep-5"></div>
           <div (click)="openLoginModal()" class="ion-padding ion-justify-content-center">

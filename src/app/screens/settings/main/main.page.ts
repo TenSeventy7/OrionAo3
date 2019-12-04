@@ -16,7 +16,6 @@ const NavigationBar = Plugins.NavigationBar as NavigationBarPlugin;
 })
 export class MainPage implements OnInit {
 
-	hideToolbar = true;
   constructor(
     private storage: Storage,
     ) { }
@@ -46,11 +45,4 @@ export class MainPage implements OnInit {
         }
     });
   }
-
-	onScroll($event: CustomEvent<ScrollDetail>) {
-	if ($event && $event.detail && $event.detail.scrollTop) {
-	const scrollTop = $event.detail.scrollTop;
-	this.hideToolbar = scrollTop < 30;
-	}
-	}
 }
