@@ -106,6 +106,8 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 @media (prefers-color-scheme: dark) {
   :root {
+  --ion-bottom-md-color: #1E1E1E;
+  --ion-card-md-color: #272727;
   --ion-color-primary: #dc4934;
   --ion-color-primary-rgb: 220,73,52;
   --ion-color-primary-contrast: #ffffff;
@@ -181,6 +183,8 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 }
 
 body.dark {
+  --ion-bottom-md-color: #1E1E1E;
+  --ion-card-md-color: #272727;
   --ion-color-primary: #dc4934;
   --ion-color-primary-rgb: 220,73,52;
   --ion-color-primary-contrast: #ffffff;

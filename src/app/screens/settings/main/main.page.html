@@ -9,9 +9,10 @@
 </ion-header>
 <ion-content fullscreen class="ion-padding" [scrollEvents]="true" (ionScroll)="onScroll($event)">
 <ion-list>
-  <ion-item>
+  <ion-item lines="full">
+    <ion-icon slot="start" name="moon"></ion-icon>
     <ion-label>Dark Mode</ion-label>
-     <theme-switch-toggle [themes]="themes"></theme-switch-toggle>
+     <theme-switch-toggle (ionChange)="setAppTheme()" [themes]="themes"></theme-switch-toggle>
   </ion-item>
 </ion-list>
 </ion-content>

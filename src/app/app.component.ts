@@ -27,36 +27,25 @@ export class AppComponent {
     private toastCtrl: ToastController
   ) {
     this.initializeApp();
+    this.setAppTheme();
   }
 
   setAppTheme() {
-    // Use matchMedia to check the user preference
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)');
-
-    toggleDarkTheme(prefersDark.matches);
-    toggleLightTheme(prefersLight.matches);
-
-    // Listen for changes to the prefers-color-scheme media query
-    prefersDark.addListener((mediaQuery) => toggleDarkTheme(mediaQuery.matches));
-    prefersLight.addListener((mediaQuery) => toggleLightTheme(mediaQuery.matches));
-
-    function toggleDarkTheme(shouldAdd) {
-     Plugins.StatusBar.setStyle({
-       style: StatusBarStyle.Dark
-     });
-     StatusBar.setBackgroundColor({ color: `#121212` });
-     NavigationBar.setBackgroundColor({color: '#FF121212'});
-    }
-
-    function toggleLightTheme(shouldAdd) {
-     Plugins.StatusBar.setStyle({
-       style: StatusBarStyle.Dark
-     });
-     StatusBar.setBackgroundColor({ color: `#fefefe` });
-     NavigationBar.setBackgroundColor({color: '#FFFEFEFE'});
-    }
-
+    this.storage.get('IonicAngularThemeSwitch_ThemeName').then((val) => {
+      if (val === 'alternative') {
+       Plugins.StatusBar.setStyle({
+         style: StatusBarStyle.Dark
+       });
+       StatusBar.setBackgroundColor({ color: `#121212` });
+       NavigationBar.setBackgroundColor({color: '#FF121212'});
+        } else {
+       Plugins.StatusBar.setStyle({
+         style: StatusBarStyle.Light
+       });
+       StatusBar.setBackgroundColor({ color: `#fefefe` });
+       NavigationBar.setBackgroundColor({color: '#A30A0B'});
+        }
+    });
   }
 
   initializeApp() {
