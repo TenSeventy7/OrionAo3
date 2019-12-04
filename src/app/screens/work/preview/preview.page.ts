@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollDetail } from '@ionic/core';
 
 @Component({
   selector: 'app-preview',
@@ -11,5 +12,12 @@ export class PreviewPage implements OnInit {
 
   ngOnInit() {
   }
+	hideToolbar = true;
 
+	onScroll($event: CustomEvent<ScrollDetail>) {
+	if ($event && $event.detail && $event.detail.scrollTop) {
+	const scrollTop = $event.detail.scrollTop;
+	this.hideToolbar = scrollTop < 30;
+	}
+	}
 }

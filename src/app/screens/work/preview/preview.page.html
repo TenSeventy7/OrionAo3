@@ -1,9 +1,14 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>preview</ion-title>
+<ion-header class="show-background" [class.hide-background-header]="hideToolbar">
+  <ion-toolbar [class.hide-background]="hideToolbar">
+    <ion-buttons slot="start">
+      <ion-back-button class="red-icon" [class.white-icon]="hideToolbar"></ion-back-button>
+    </ion-buttons>
+    <ion-title [class.hide-title]="hideToolbar">Story Title</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)" fullscreen>
+	<img class="arion-story-preview-cover" src="/assets/app-icon.png" />
 
+	
 </ion-content>

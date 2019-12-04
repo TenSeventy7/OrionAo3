@@ -52,6 +52,13 @@
   margin-right: 3.7% !important;
 }
 
+.arion-story-preview-cover {
+  width: 100% !important;
+  height: 40% !important;
+  margin-top: -56px !important;
+  object-fit: cover;
+}
+
 .arion-discover-header-button {
   margin-top: 6% !important;
   margin-right: -8% !important;
@@ -84,6 +91,13 @@
   height: 100% !important;
   margin-right: -2.5% !important;
   margin-left: 8.7% !important;
+}
+.arion-browse-card {
+  padding-left: 2.7% !important;
+  padding-right: 2.7% !important;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+  margin-top: -2.5% !important;
 }
 
 .arion-discover-whitespace {
@@ -138,7 +152,7 @@ super-tab-button[aria-selected=true] .arion-tab-sel {
 
 .arion-tab-sel {
   width: 30px;
-  height: 6px;
+  height: 4px;
   position:absolute;
   bottom: 0;
 }
@@ -168,9 +182,20 @@ super-tab-button {
     border-style: none;
     background: transparent;
 }
+.hide-title {
+    display: none;
+}
 .hide-background-header::after {
     border-style: none;
     background-image: none !important;
+}
+
+.red-icon {
+    color: var(--ion-color-primary);
+}
+
+.white-icon {
+    color: #fff !important;
 }
 
 .login-logo {

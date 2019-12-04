@@ -29,12 +29,6 @@
             </ion-buttons>
 
               <ion-title color="primary" class="product-sans-header">Discover</ion-title>
-
-            <ion-buttons slot="primary">
-              <ion-button color="primary" routerLink="#search-panel">
-                <ion-icon color="medium" slot="icon-only" class="th-icon-header" src="/assets/fonts/icons/search.svg"></ion-icon>
-              </ion-button>
-            </ion-buttons>
           </ion-toolbar>
         </ion-header>
 
@@ -82,6 +76,93 @@
             <div class="arion-discover-whitespace"></div>
           </div>
       </div>
+        <ion-grid class="arion-discover-header ion-padding">
+          <ion-row><ion-col><h3 class="product-sans-header arion-discover-header-text">Latest Updates</h3></ion-col>
+            <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
+          </ion-row>
+          </ion-grid>
+
+        <div class="arion-discover-cards">
+          <div class="arion-discover-card-list">
+          <ion-card mode="ios" class="arion-discover-card">
+              <img class="arion-discover-cover" src="/assets/app-icon.png" />
+            <ion-card-header class="arion-discover-text">
+              <br>
+              <ion-card-subtitle color="primary">Author</ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle color="medium">Fandom</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content class="arion-discover-text arion-discover-card-content">
+             <span>Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.</span>
+            </ion-card-content>
+            <br>
+          </ion-card>
+
+          <ion-card mode="ios" class="arion-discover-card">
+              <img class="arion-discover-cover" src="/assets/app-icon.png" />
+            <ion-card-header class="arion-discover-text">
+              <br>
+              <ion-card-subtitle color="primary">Author</ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle color="medium">Fandom</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content class="arion-discover-text arion-discover-card-content">
+             <span>Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.</span>
+            </ion-card-content>
+            <br>
+          </ion-card>
+
+            <div class="arion-discover-whitespace"></div>
+          </div>
+      </div>
+        <ion-grid class="arion-discover-header ion-padding">
+          <ion-row><ion-col><h3 class="product-sans-header arion-discover-header-text">For You</h3></ion-col>
+            <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
+          </ion-row>
+          </ion-grid>
+
+        <div class="arion-discover-cards">
+          <div class="arion-discover-card-list">
+          <ion-card mode="ios" class="arion-discover-card">
+              <img class="arion-discover-cover" src="/assets/app-icon.png" />
+            <ion-card-header class="arion-discover-text">
+              <br>
+              <ion-card-subtitle color="primary">Author</ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle color="medium">Fandom</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content class="arion-discover-text arion-discover-card-content">
+             <span>Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.</span>
+            </ion-card-content>
+            <br>
+          </ion-card>
+
+          <ion-card mode="ios" class="arion-discover-card">
+              <img class="arion-discover-cover" src="/assets/app-icon.png" />
+            <ion-card-header class="arion-discover-text">
+              <br>
+              <ion-card-subtitle color="primary">Author</ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle color="medium">Fandom</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content class="arion-discover-text arion-discover-card-content">
+             <span>Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.</span>
+            </ion-card-content>
+            <br>
+          </ion-card>
+
+            <div class="arion-discover-whitespace"></div>
+          </div>
+      </div>
+
       </ion-content>
     </super-tab>
     <super-tab>
@@ -105,6 +186,89 @@
             <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
           </ion-row>
           </ion-grid>
+          <ion-card mode="ios" class="arion-browse-card ion-justify-content-center">
+            <ion-list>
+              <ion-item lines="none" routerLink="/preview">
+                <ion-label>Story Preview Demo</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/reader">
+                <ion-label>Story Reader Demo</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/detail">
+                <ion-label>User Info Demo</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+            </ion-list>
+          </ion-card>
+
+        <ion-grid class="arion-discover-header ion-padding">
+          <ion-row><ion-col><h5 class="product-sans-header arion-search-header-text">Books & Literature</h5></ion-col>
+            <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
+          </ion-row>
+          </ion-grid>
+          <ion-card mode="ios" class="arion-browse-card ion-justify-content-center">
+            <ion-list>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+            </ion-list>
+          </ion-card>
+
+        <ion-grid class="arion-discover-header ion-padding">
+          <ion-row><ion-col><h5 class="product-sans-header arion-search-header-text">Cartoons & Comics & Graphic Novels</h5></ion-col>
+            <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
+          </ion-row>
+          </ion-grid>
+          <ion-card mode="ios" class="arion-browse-card ion-justify-content-center">
+            <ion-list>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+            </ion-list>
+          </ion-card>
+
+        <ion-grid class="arion-discover-header ion-padding">
+          <ion-row><ion-col><h5 class="product-sans-header arion-search-header-text">Movies</h5></ion-col>
+            <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>
+          </ion-row>
+          </ion-grid>
+          <ion-card mode="ios" class="arion-browse-card ion-justify-content-center">
+            <ion-list>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+              <ion-item lines="none" routerLink="/home">
+                <ion-label>僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia</ion-label>
+                <ion-card-subtitle>(77,234)</ion-card-subtitle>
+              </ion-item>
+            </ion-list>
+          </ion-card>
+
       </ion-content>
     </super-tab>
     <super-tab>
