@@ -16,19 +16,13 @@
     </style>
 
     <style name="AppTheme.NoActionBarLaunch" parent="AppTheme.NoActionBar">
-        <item name="android:background">@drawable/launch_splash</item>
+        <item name="android:background">@drawable/tenseventyseven_app_splash</item>
 		<item name="android:windowActivityTransitions">true</item>
 		<item name="android:windowExitTransition">@transition/main_exit</item>
 		<item name="android:windowReenterTransition">@transition/main_reenter</item>
 		<item name="android:windowEnterTransition">@transition/main_reenter</item>
-    </style>
-    <style name="SplashActivity.Theme" parent="AppTheme.NoActionBar">
-        <item name="android:background">@drawable/tenseventyseven_app_splash</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowBackground">@color/splash_background</item>
         <item name="android:statusBarColor">@color/splash_background</item>
-		<item name="android:windowExitTransition">@transition/main_exit</item>
-		<item name="android:windowReenterTransition">@transition/main_reenter</item>
-		<item name="android:windowEnterTransition">@transition/main_reenter</item>
     </style>
 </resources>

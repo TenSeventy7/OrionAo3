@@ -1,13 +1,15 @@
 import { Component, ViewChildren, QueryList, OnInit } from '@angular/core';
 import { Events, MenuController, Platform, IonRouterOutlet, ActionSheetController, PopoverController, ModalController, ToastController } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, NavigationStart } from '@angular/router';
 import { Toast } from '@ionic-native/toast/ngx';
 import { SuperTabsConfig } from 'node_modules/@ionic-super-tabs/core/dist/types/interface';
 
 import { LoginComponent } from '../../components/login/login.component';
 import { ScrollDetail } from '@ionic/core';
+
+import { Plugins, StatusBarStyle } from '@capacitor/core';
+const { SplashScreen } = Plugins;
+const { StatusBar } = Plugins;
 
 @Component({
   selector: 'app-home',
@@ -17,8 +19,6 @@ import { ScrollDetail } from '@ionic/core';
 export class HomePage implements OnInit {
     constructor(
     private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
     private router:Router,
     private menu: MenuController,
     public toastCtrl: ToastController,
@@ -29,6 +29,7 @@ export class HomePage implements OnInit {
     ) {}
 
   ngOnInit() {
+     SplashScreen.hide();
   }
   
     config: SuperTabsConfig = {

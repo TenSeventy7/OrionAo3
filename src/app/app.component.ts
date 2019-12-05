@@ -50,12 +50,6 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-     Plugins.StatusBar.setStyle({
-       style: StatusBarStyle.Light
-     });
-     StatusBar.setBackgroundColor({ color: `#fefefe` });
-     NavigationBar.setBackgroundColor({color: '#FFFEFEFE'});
-     SplashScreen.hide();
     });
   }
 
