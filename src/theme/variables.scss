@@ -31,12 +31,9 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 /** Ionic CSS Variables **/
 :root {
-  --super-tabs-toolbar-background: var(--ion-bottom-md-color);
-  --st-indicator-color: var(--ion-color-primary);
-  --st-base-color-inactive: var(--ion-color-medium);
-  --st-base-color-active: var(--ion-color-primary);
-  --st-indicator-height: 0;
 
+  --ion-background-color: #fefefe;
+  --ion-bottom-md-color: #fefefe;
   --ion-background-color: #fefefe;
   --ion-bottom-md-color: #fefefe;
   --ion-card-md-color: #fff;

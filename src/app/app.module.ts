@@ -19,7 +19,6 @@ import { defineCustomElements } from '@teamhive/lottie-player/loader';
 import { IonicAngularThemeSwitchService, IonicAngularThemeSwitchToggleModule } from 'ionic-angular-theme-switch';
 import { MaterialModule } from './modules/angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SuperTabsModule } from '@ionic-super-tabs/angular';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,8 +26,7 @@ import { SuperTabsModule } from '@ionic-super-tabs/angular';
   imports: [
   BrowserModule,
   MaterialModule,
-  ReactiveFormsModule,
-  SuperTabsModule.forRoot(),
+  ReactiveFormsModule, 
   IonicStorageModule.forRoot(),
   IonicAngularThemeSwitchToggleModule.forRoot(),
   IonicModule.forRoot({
