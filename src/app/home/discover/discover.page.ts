@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ScrollDetail } from '@ionic/core';
+import { Plugins } from '@capacitor/core';
+const { SplashScreen } = Plugins;
 
 @Component({
   selector: 'app-discover',
@@ -10,7 +12,9 @@ export class ArionDiscoverTab implements OnInit {
  
   constructor() { }
  
-  ngOnInit() { }
+  ngOnInit() {
+  	SplashScreen.hide();
+  }
  
 	hideToolbar = true;
 	onScroll($event: CustomEvent<ScrollDetail>) {
