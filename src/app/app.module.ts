@@ -30,7 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   IonicStorageModule.forRoot(),
   IonicAngularThemeSwitchToggleModule.forRoot(),
   IonicModule.forRoot({
-    mode: 'md'
+    mode: 'ios'
   }), 
   AppRoutingModule,
   BrowserAnimationsModule

@@ -1,0 +1,16 @@
+.lf-header-logo {
+  margin-top: -20px !important;
+  position: absolute !important;
+}
+.lf-header-primary {
+  background: var(--ion-color-primary) !important;
+}
+.lf-header-title {
+  margin-bottom: 24px !important;
+  margin-top: 0px !important;
+}
+.lf-header-toolbar {
+  --border-style: none !important;
+  --border-color: rgba(0,0,0,0.0) !important;
+  border: 0px solid rgba(0,0,0,0.0) !important;
+}

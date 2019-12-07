@@ -1,326 +1,50 @@
-
-.arion-sep-20 {
-  height: 20%;
-}
-.arion-sep-15 {
-  height: 15%;
-}
-.arion-sep-10 {
-  height: 10%;
-}
-.arion-sep-5 {
-  height: 5%;
-}
-.arion-sep-2p5 {
-  height: 2.5%;
-}
-.arion-spa-5 {
-  width: 0.25%;
+/** Use systematic mix-ins for whitespace size. **/
+@for $sep from 1 through 10 {
+    $separator-size: 20px * $sep;
+    .app-separator-#{$sep} { 
+        height: $separator-size;
+        }
 }
 
-.vertical-align-content {
-  display: flex!important;
-  align-content: center!important;
-  align-items: center!important;
-}
-
-.center-align-content {
-  align-content: center!important;
-  align-items: center!important;
-  margin: auto;
-}
-
+/** Since icons used do not work well with Ionic,
+set values for them when they're set in the header. **/
 .th-icon-header {
   font-size: 16px !important;
   margin-top: 6px;
   margin-right: 6px;
 }
 
-.arion-statusbar-shadow {
+/** Status Bar overlay. Useful for light themes. **/
+.app-statusbar-overlay {
   height: 2.5px !important;
   z-index: 999 !important;
   background: var(--ion-background-color);
 }
-
-.arion-statusbar-shadow-hide::after {
+.app-statusbar-overlay-hide::after {
   opacity: 0 !important;
 }
 
-.arion-discover-header {
-  margin-bottom: -5% !important;
-  margin-left: 3.7% !important;
-  margin-right: 3.7% !important;
+/** Make several components transparent for easier theming. **/
+.app-transparent-element {
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  background: rgba(0, 0, 0, 0.0) !important;
+  --background: rgba(0, 0, 0, 0.0) !important;
 }
 
-.arion-story-preview-cover {
-  width: 100% !important;
-  height: 40% !important;
-  margin-top: -56px !important;
-  object-fit: cover;
+/** Disable ripple on certain elements. **/
+.app-no-ripple {
+  --ripple-color: transparent;
 }
 
-.arion-discover-header-button {
-  margin-top: 6% !important;
-  margin-right: -8% !important;
-}
-
-.arion-story-preview-title-contatiner {
-  padding-bottom: 0% !important;
-}
-.arion-story-preview-desc-contatiner {
-  margin-top: -2% !important;
-}
-.arion-story-preview-subtitle-contatiner {
-  padding-top: -4% !important;
-}
-.arion-story-preview-author-contatiner {
-  padding-top: 0% !important;
-  margin-top: -5% !important;
-  margin-left: -0.5% !important;
-}
-.arion-story-preview-button-contatiner {
-  padding: 0% !important;
-  height: 82px !important;
-  margin-top: -4% !important;
-  background: var(--ion-card-md-color) !important;
+/** Vertical alignment. **/
+.vertical-align-content {
   display: flex!important;
   align-content: center!important;
   align-items: center!important;
 }
-.arion-story-preview-button-row-contatiner {
-  --ion-grid-column-padding: 5px !important;
-  padding-left: 2% !important;
-  padding-right: 2% !important;
-}
-.arion-story-preview-button {
-  height: 76px !important;
-  width: 76px !important;
-  align-content: center!important;
-  align-items: center!important;
-  text-align: center!important;
-  --ion-grid-column-padding: 1px !important;
-}
-.arion-story-preview-icon {
-  font-size: 24px !important;
-}
-.arion-story-preview-icon-text {
-  font-size: 8sp !important;
-  display: flex !important;
-  overflow: visible !important;
-  justify-content: center;
-}
-.arion-story-preview-author-img {
-  width: 24px !important;
-  height: 24px !important;
-}
-.arion-story-preview-author-name {
-  font-size: 8sp !important;
-}
-.arion-story-preview-col-contatiner {
-  align-self: flex-start;
-}
-.arion-story-preview-right-button {
-  margin-bottom: -17px !important;
-  top: 0% !important;
-  height: 48px !important;
-  width: 48px !important;
-  margin-right: -6% !important;
-}
-.arion-story-preview-title {
-  margin-left: 5% !important;
-  margin-top: 6% !important;
-}
-.arion-story-preview-right-text {
-  right: 9% !important;
-  position: absolute !important;
-}
-.arion-story-preview-subtitle {
-  margin-left: 7% !important;
-}
-.arion-story-preview-description-contatiner {
-  margin-top: 0% !important;
-  padding-left: 7% !important;
-  padding-right: 7% !important;
-}
-.arion-story-preview-header-text {
-  font-size: 105%;
-}
-.arion-preview-header {
-  margin-bottom: -5% !important;
-  margin-left: 3.7% !important;
-  margin-right: 3.7% !important;
-}
 
 .arion-discover-header-text {
-  font-size: 120%;
-}
-
-.arion-search-header-text {
-  font-size: 90% !important;
-}
-
-.allcaps {
-   text-transform: uppercase;
-}
-
-.no-ripple {
-  --ripple-color: transparent;
-}
-
-.arion-logo {
-  fill: var(--ion-color-primary);
-}
-
-.arion-discover-card {
-  width: 80% !important;
-  height: 100% !important;
+  font-size: 12sp !important;
   display: inline-block;
-  height: 100% !important;
-  margin-right: -2.5% !important;
-  margin-left: 8.7% !important;
-}
-.arion-browse-card {
-  padding-left: 2.7% !important;
-  padding-right: 2.7% !important;
-  padding-top: 5% !important;
-  padding-bottom: 5% !important;
-  margin-top: -2.5% !important;
-}
-
-.arion-discover-whitespace {
-  width: 25px !important;
-  height: 100% !important;
-  display: inline-block;
-  height: 100% !important;
-  margin-right: -3% !important;
-  margin-left: 8.7% !important;
-}
-
-.arion-discover-cover {
-  height: 175px;
-  object-fit: cover;
-}
-
-.arion-discover-card-content {
-  padding-bottom: 5%;
-}
-
-.arion-discover-text {
-  white-space: normal !important;
-}
-
-.searchbar-input {
-    box-shadow: none !important;
-    border-style: solid !important;
-    border-width: 0.5px !important;
-    border-color: rgba(var(--ion-color-light-rgb), 0.5)!important;
-    border-radius: 6px !important;
-}
-
-.searchbar-search-icon {
-  width: 15px !important;
-  margin-left: 1.5%;
-}
-
-.arion-discover-cards{
-  overflow-x: scroll;
-  overflow-y: hidden;
-  .arion-discover-card-list{
-    white-space: nowrap;
-  }
-}
-::-webkit-scrollbar { 
-  display: none; 
-}
-
-super-tab-button[aria-selected=true] .arion-tab-sel {
-  border-bottom: 5px solid var(--ion-color-primary);
-}
-
-.arion-tab-sel {
-  width: 30px;
-  height: 4px;
-  position:absolute;
-  bottom: 0;
-}
-
-super-tabs-toolbar {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-  height: 52px !important;
-}
-
-super-tab-button {
-  height: 52px !important;
-}
-
-.app-icon {
-  width: 100px;
-  height: 100px;
-}
-
-.user-info-icon {
-  width: 80px;
-  height: 80px;
-}
-
-.hide-background {
-    --background: transparent;
-    --ion-color-base: transparent !important;
-    border-style: none;
-    background: transparent;
-}
-.hide-title {
-    display: none;
-}
-.hide-background-header::after {
-    border-style: none;
-    background-image: none !important;
-}
-
-.red-icon {
-    color: var(--ion-color-primary);
-}
-
-.white-icon {
-    color: #fff !important;
-}
-
-.login-logo {
-    width: 30%;
-    height: auto;
-    margin: auto;
-}
-
-.arion-login-footer {
-  position:absolute;
-  bottom: 10%;
-  align-content: center!important;
-  align-items: center!important;
-  margin: auto;
-  width: auto;
-}
-
-.welcome-image {
-  width: auto;
-  height: 120vh;
-}
-
-.arion-toolbar {
-  background-color: rgba(0, 0, 0, 0.0) !important;
-  background: rgba(0, 0, 0, 0.0) !important;
-  --background: rgba(0, 0, 0, 0.0) !important;
-}
-ion-list {
-  background-color: rgba(0, 0, 0, 0.0) !important;
-  background: rgba(0, 0, 0, 0.0) !important;
-  --background: rgba(0, 0, 0, 0.0) !important;
-}
-ion-item {
-  background-color: rgba(0, 0, 0, 0.0) !important;
-  background: rgba(0, 0, 0, 0.0) !important;
-  --background: rgba(0, 0, 0, 0.0) !important;
-}
-
-ion-card {
-  --background: var(--ion-card-md-color) !important;
+  margin-top: 12.5px;
 }

@@ -1,21 +1,19 @@
-<ion-header class="arion-statusbar-shadow" [class.arion-statusbar-shadow-hide]="hideToolbar">
-    <div class="arion-statusbar-shadow"></div>
+
+<ion-header class="lf-header-primary" no-border>
+	<ion-toolbar class="lf-header-toolbar">
+	  <ion-title class="lf-header-title">Search</ion-title>               
+	</ion-toolbar>
 </ion-header>
-<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
-	<ion-header no-border mode="ios" class="arion-toolbar ios ion-padding">
-	  <ion-toolbar mode="ios" class="arion-toolbar ios">
-
-	      <ion-title color="primary" class="product-sans-header">Browse</ion-title>
-
-		  <ion-buttons slot="primary">
-		    <ion-button color="primary" routerLink="/tabs/search">
-		      <ion-icon color="medium" slot="icon-only" class="th-icon-header" src="/assets/fonts/icons/menu-dots.svg"></ion-icon>
-		    </ion-button>
-		  </ion-buttons>
-	  </ion-toolbar>
+<ion-content>
+	<ion-header collapse="condense">
+		<ion-toolbar color="primary" class="lf-header-toolbar">
+		  <ion-title size="large">Search</ion-title>
+		</ion-toolbar>
+		<ion-toolbar color="primary" class="lf-header-toolbar">
+		  <ion-searchbar class="ion-padding" animated="true" searchIcon="/assets/fonts/icons/search.svg" debounce="500" placeholder="Search for works and more"></ion-searchbar>
+		</ion-toolbar>
 	</ion-header>
-    <ion-searchbar class="ion-padding" animated="true" searchIcon="/assets/fonts/icons/search.svg" debounce="500" placeholder="Search for works and more"></ion-searchbar>
-
+    
 	<ion-grid class="arion-discover-header ion-padding">
 	  <ion-row><ion-col><h5 class="product-sans-header arion-search-header-text">Anime and Manga</h5></ion-col>
 	    <ion-col><ion-button class="product-sans arion-discover-header-button" shape="round" fill="clear" color="primary" float-right>More</ion-button></ion-col>

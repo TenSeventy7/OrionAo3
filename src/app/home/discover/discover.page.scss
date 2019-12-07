@@ -1,4 +1,32 @@
-.welcome-card {
-  height: 280px;
+.arion-discover-card {
+  width: 60%;
+  display: inline-block;
+  height: 100% !important;
+  margin-right: -2.5% !important;
+  margin-left: 8.7% !important;
+}
+.arion-discover-whitespace {
+  width: 25px !important;
+  height: 100% !important;
+  display: inline-block;
+  margin-right: -3% !important;
+  margin-left: 8.7% !important;
+}
+.arion-discover-cards{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  .arion-discover-card-list{
+    white-space: nowrap;
+  }
+}
+::-webkit-scrollbar { 
+  display: none; 
+}
+.arion-discover-cover {
+  height: 200px;
   object-fit: cover;
+}
+.arion-discover-card-content {
+  padding-bottom: 5%;
+  white-space: normal !important;
 }
