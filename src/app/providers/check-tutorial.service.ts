@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanLoad, Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +11,7 @@ export class CheckTutorial implements CanLoad {
   canLoad() {
     return this.storage.get('ion_did_tutorial').then(res => {
       if (res) {
-        this.router.navigate(['/home/tabs/discover']);
+        this.router.navigate(['/home/discover']);
         return false;
       } else {
         return true;

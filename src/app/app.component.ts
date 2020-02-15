@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuController, Platform, ToastController } from '@ionic/angular';
-import { Storage } from '@ionic/storage';
 import { Plugins, StatusBarStyle } from '@capacitor/core';
-import { NavigationBarPlugin } from 'capacitor-navigationbar';
-import { UserData } from './providers/user-data';
-import { IonicAngularThemeSwitchService } from 'ionic-angular-theme-switch';
-import { defaultTheme, darkTheme } from './providers/theme-switcher.service';
+import { Platform } from '@ionic/angular';
 
-const { StatusBar } = Plugins;
-const NavigationBar = Plugins.NavigationBar as NavigationBarPlugin;
-const { SplashScreen } = Plugins;
+import * as PluginsLibrary from '@jeepq/capacitor';
+import { Storage } from '@ionic/storage';
+
+const { Device, StatusBar, SplashScreen, CapacitorDataStorageSqlite } = Plugins;
 
 @Component({
   selector: 'app-root',
@@ -18,43 +14,28 @@ const { SplashScreen } = Plugins;
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+   _storage: any;
+
   constructor(
-    private themeSwitchService: IonicAngularThemeSwitchService,
     private platform: Platform,
     private router: Router,
-    private storage: Storage,
-    private userData: UserData,
-    private toastCtrl: ToastController
+    private storage: Storage
   ) {
     this.initializeApp();
-    this.setAppTheme();
   }
 
-  setAppTheme() {
-    this.storage.get('IonicAngularThemeSwitch_ThemeName').then((val) => {
-      if (val === 'alternative') {
-       Plugins.StatusBar.setStyle({
-         style: StatusBarStyle.Dark
-       });
-       StatusBar.setBackgroundColor({ color: `#121212` });
-       NavigationBar.setBackgroundColor({color: '#FF1E1E1E'});
-        } else {
-       Plugins.StatusBar.setStyle({
-         style: StatusBarStyle.Light
-       });
-       StatusBar.setBackgroundColor({ color: `#fefefe` });
-       NavigationBar.setBackgroundColor({color: '#A30A0B'});
-        }
-    });
-  }
+  async ngAfterViewInit() {
+    const info = await Device.getInfo();
+      if (info.platform === "ios" || info.platform === "android") {
+       this._storage = CapacitorDataStorageSqlite;
+     } else {
+       this._storage = PluginsLibrary.CapacitorDataStorageSqlite
+     }
+
+   }
 
   initializeApp() {
     this.platform.ready().then(() => {
     });
-  }
-
-  openTutorial() {
-    this.storage.set('ion_did_tutorial', false);
-    this.router.navigateByUrl('/tutorial');
   }
 }

@@ -1,22 +1,8 @@
 {
-  "appId": "io.tenseventyseven.arion",
-  "appName": "Arion",
+  "appId": "xyz.tensevntysevn.orion",
+  "appName": "Orion",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "backgroundColor": "#000",
-  "android": {
-    "backgroundColor": "#000",
-    "allowMixedContent": true
-  },
-  "ios": {
-    "backgroundColor": "#000"
-  },
-  "cordova": {},
-  "plugins": {
-    "SplashScreen": {
-      "launchAutoHide": false,
-      "showSpinner": false
-    }
-  }
+  "cordova": {}
 }

@@ -25,6 +25,7 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-@import './theme/common.fonts';
-@import './theme/common.app';
-@import './theme/common.leaf.framework';
+@import "./theme/arion/home.scss";
+@import "./theme/arion/spacers.scss";
+@import "./theme/arion/scrolling.scss";
+@import "./theme/arion/fonts.scss";
