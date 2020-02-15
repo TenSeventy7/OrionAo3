@@ -1,0 +1,10 @@
+// Scrolling settings for several portions of the app
+
+.ar-disable-scrolling {
+  overflow: hidden;
+  --overflow: hidden;
+  
+	::-webkit-scrollbar { 
+	  display: none; 
+	}
+}

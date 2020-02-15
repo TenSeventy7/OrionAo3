@@ -1,0 +1,9 @@
+// Spacers for element spacing
+
+@for $sep from 1 through 10 {
+    $separator-size: 1.5vh * $sep;
+    .ar-spacer-#{$sep} { 
+        height: $separator-size;
+        width: 100%;
+        }
+}

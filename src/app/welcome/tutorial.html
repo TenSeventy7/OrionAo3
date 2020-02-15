@@ -1,0 +1,47 @@
+<div class="ar-spacer-4"></div>
+<ion-content class="ion-justify-content-center ar-disable-scrolling">
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false" class="ion-padding ion-justify-content-center ar-disable-scrolling">
+    <ion-slide class="ar-disable-scrolling">
+      <div class="ar-spacer-1"></div>
+      <img src="assets/images/welcome/welcome-img-1.svg" class="welcome-image slide-image" />
+      <div class="ar-spacer-6"></div>
+      <h2 class="slide-title">
+        Welcome to Orion!
+      </h2>
+      <p>
+        Welcome to a new Archive of Our Own (AO3) reading experience.
+      </p>
+    </ion-slide>
+
+    <ion-slide class="ar-disable-scrolling">
+      <lottie-player autoplay loop src="/assets/images/welcome/welcome-img-2-lt.json"></lottie-player>
+      <div class="ar-spacer-4"></div>
+      <h2 class="slide-title">Read anywhere</h2>
+      <p>
+        Orion is built on modern web technologies and works on your phone, tablet, or PC. Read anywhere, anytime, and on any device.
+      </p>
+    </ion-slide>
+
+    <ion-slide class="ar-disable-scrolling">
+      <div class="ar-spacer-2"></div>
+      <lottie-player autoplay loop src="/assets/images/welcome/welcome-img-3-lt.json"></lottie-player>
+      <div class="ar-spacer-5"></div>
+      <h2 class="slide-title">Happy reading!</h2>
+      <p>
+        If you have any issues, just Send a Feedback.
+      </p>
+      <ion-button fill="clear" (click)="startApp()">
+        Start reading
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer no-border class="ion-padding">
+  <ion-toolbar>
+    <ion-buttons slot="end" class="ion-padding">
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
