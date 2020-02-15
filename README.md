@@ -1,12 +1,13 @@
 ![app icon](https://gitlab.com/TenSeventy7/arion-ao3/raw/master/press/android/mipmap-xhdpi/ic_launcher.png)
-# Arion (ArionAo3)
+# Orion for Ao3
 
-Arion is a mobile client for the [Archive of Our Own](https://archiveofourown.org). Written in Angular and with the Ionic Framework.
+Orion is a mobile client for the [Archive of Our Own](https://archiveofourown.org). Written in Angular and with the Ionic Framework.
 
 ## Pre-requisites
-* Ionic Framework 4
-* node.js 13.x or higher
+* Ionic Framework 5
+* node.js 12.x or higher
 * npm 6 or higher
+* npx
 
 ## Installation
 Refer from [Ionic](https://ionicframework.com/docs/installation/cli)'s documentation to install Ionic.
@@ -53,4 +54,4 @@ Pull requests are always welcome. For major changes, please open an issue first 
 Please make sure to test code before opening a pull request as to make merging efficient and convenient for everyone. Always remember to keep your code merged with current sources as well.
 
 ## License
-Arion is licensed in [GPLv3](https://gitlab.com/TenSeventy7/arion-ao3/raw/master/LICENSE)
+Orion is licensed in [GPLv3](https://gitlab.com/TenSeventy7/arion-ao3/raw/master/LICENSE)
