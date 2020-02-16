@@ -1,4 +1,4 @@
-![app icon](https://gitlab.com/TenSeventy7/orion-ao3/raw/master/press/android/mipmap-xhdpi/ic_launcher_orion.png)
+![app icon](https://gitlab.com/TenSeventy7/orion-ao3/raw/master/press/android/mipmap-xhdpi/ic_launcher.png)
 # Orion for Ao3
 
 Orion is a mobile client for the [Archive of Our Own](https://archiveofourown.org) service (AO3). Orion is written in Angular with the Ionic Framework, and is a Capacitor-compiled app.
