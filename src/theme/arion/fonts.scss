@@ -149,6 +149,15 @@ ion-title, h1, h2, h3, ion-card-title, ion-list-header {
    font-family: 'Manrope Bold';
 }
 
+.ar-list-header {
+   font-family: 'Manrope Bold';
+   font-weight: 600;
+}
+
+.md .ar-list-header {
+   text-transform: uppercase;
+}
+
 .manrope-header {
    font-family: 'Manrope Bold';
 }
