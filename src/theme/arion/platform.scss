@@ -1,0 +1,19 @@
+// Platform-specific component settings
+
+.ios .ar-droid {
+  display: none;
+}
+.md .ar-droid {
+  display: unset !important;
+}
+
+.ios .ar-ios {
+  display: unset;
+}
+.md .ar-ios {
+  display: none;
+}
+
+.ar-header-droid {
+  --min-height: 56px;
+}
