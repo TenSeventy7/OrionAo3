@@ -11,4 +11,17 @@ import { CardSliderComponent } from './card-slider.component';
   declarations: [CardSliderComponent],
   exports: [CardSliderComponent]
 })
-export class CardSliderComponentModule {}
+export class CardSliderComponentModule {
+
+  SliderOptions = {
+  	slidesPerView: 1.15,
+  	freeMode: false,
+	coverflowEffect: {
+	rotate: 50,
+	stretch: 100,
+	depth: 0,
+	modifier: 1,
+	slideShadows: false,
+	    }
+	}
+}
