@@ -1,0 +1,56 @@
+
+.ar-card-header-text {
+  font-size: 1.4em !important;
+  margin-left: 18px;
+  margin-bottom: -8px;
+  margin-top: 16px;
+}
+
+.ar-card-image {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+}
+
+.md .ar-card-header-text {
+  font-size: 1.2em !important;
+  font-weight: 600 !important;
+  margin-left: 12px;
+  margin-bottom: 2px;
+  margin-top: 14px;
+}
+.md .ar-card-image {
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-style: none !important;
+}
+.md ion-card, .card-md {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-style: none !important;
+}
+
+ion-card-header {
+  text-align: left !important;
+}
+.md ion-card-header {
+  padding-left: 2px !important;
+  padding-top: 12px !important;
+  padding-bottom: 6px !important;
+}
+.md ion-card-header ion-card-title {
+  margin-top: 2px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-size: 1.6em !important;
+  font-weight: 800 !important;
+}
+
+ion-card-content {
+  text-align: left !important;
+}
+.md ion-card-content {
+  padding-left: 2px !important;
+}
