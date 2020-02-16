@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { IonRouterOutlet } from '@ionic/angular';
+
+import { LoginComponent } from '../../components/ar-ao3-login/login.component';
 
 @Component({
   selector: 'app-tab',
@@ -7,6 +11,18 @@ import { Component } from '@angular/core';
 })
 export class TabPage {
 
-  constructor() {}
-
+  constructor(
+  	private modalCtrl: ModalController,
+  	private routerOutlet: IonRouterOutlet
+  	) {}
+  
+  async openLoginModal(): Promise<void> {
+    const accountListModal = await this.modalCtrl.create({
+      component: LoginComponent,
+      mode: "ios",
+      swipeToClose: true,
+      presentingElement: this.routerOutlet.nativeEl
+    });
+    return await accountListModal.present();
+  }
 }
