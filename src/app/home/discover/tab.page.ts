@@ -16,7 +16,7 @@ export class TabPage {
   	SplashScreen.hide();
   }
 
-  HomesliderOptions = {
+  SliderOptions = {
   	slidesPerView: 1.15,
   	freeMode: false,
 	coverflowEffect: {
