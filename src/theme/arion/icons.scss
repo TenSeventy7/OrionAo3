@@ -1,0 +1,18 @@
+// Custom icon settings
+
+ion-icon {
+	&[class*="ar-ic-"] {
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat
+	}
+
+	&[class*="ar-ic-user-header"] {
+		$ic-path: "/assets/fonts/icofonts/user-header.svg";
+	    background-image: url($ic-path);
+	}
+	&[class*="ar-ic-arion-header"] {
+		$ic-path: "/assets/fonts/icofonts/arion-header.svg";
+	    background-image: url($ic-path);
+	}
+}
