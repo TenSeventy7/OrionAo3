@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "919284849073",
+    "firebase_url": "https://orionao3.firebaseio.com",
+    "project_id": "orionao3",
+    "storage_bucket": "orionao3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919284849073:android:60ab132530e9a35c790590",
+        "android_client_info": {
+          "package_name": "xyz.tensevntysevn.orion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919284849073-4n9afgbjpaanruakjls3185ib63vhe7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWnh9wv49pK0ejP8vashI3ISOfR3rDKao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919284849073-4n9afgbjpaanruakjls3185ib63vhe7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
