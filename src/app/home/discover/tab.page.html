@@ -6,24 +6,29 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header class="ar-header-ios-container" collapse="condense">
     <ion-toolbar>
       <ion-title class="ar-header-title" size="large">Discover</ion-title>
+    <ion-buttons class="ar-header-ios-icon-container" slot="secondary">
+      <ion-button fill="clear" class="no-ripple">
+        <ion-icon class="ar-header-ios-icon ar-ic-arion-header" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <ion-toolbar mode="ios" class="ar-droid ar-header-droid">
+  <ion-toolbar mode="ios" class="ar-droid ar-header-droid ion-padding">
     <ion-buttons slot="secondary">
-      <ion-button>
-        <ion-icon color="medium" slot="icon-only" name="person-circle"></ion-icon>
+      <ion-button mode="md" fill="clear" color="primary" class="no-ripple">
+        <ion-icon class="ar-header-droid-icon ar-ic-arion-header" slot="icon-only"></ion-icon>
       </ion-button>
     </ion-buttons>
       
     <ion-title color="primary">Discover</ion-title>
 
     <ion-buttons slot="primary">
-      <ion-button>
-        <ion-icon color="medium" slot="icon-only" name="search"></ion-icon>
+      <ion-button mode="md" fill="clear" color="primary" routerLink="/home/account">
+        <ion-icon class="ar-header-droid-icon ar-ic-user-header" slot="icon-only"></ion-icon>
       </ion-button>
       </ion-buttons>
   </ion-toolbar>

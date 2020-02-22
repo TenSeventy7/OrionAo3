@@ -29,4 +29,9 @@
 @import "./theme/arion/spacers.scss";
 @import "./theme/arion/scrolling.scss";
 @import "./theme/arion/fonts.scss";
+@import "./theme/arion/icons.scss";
 @import "./theme/arion/platform.scss";
+
+.no-ripple {
+  --ripple-color: transparent;
+}

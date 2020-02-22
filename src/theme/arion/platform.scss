@@ -15,5 +15,29 @@
 }
 
 .ar-header-droid {
-  --min-height: 56px;
+  --min-height: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.ar-header-droid-icon {
+  height: 24px;
+  width: 24px;
+}
+.ar-header-ios-icon {
+  height: 32px;
+  width: 32px;
+}
+.ar-header-ios-icon-container {
+  margin-bottom: 48px;
+  margin-left: 4px;
+}
+.ar-header-ios-container {
+  padding-top: 0px;
+  margin-top: -12px;
+}
+
+.md ion-slides {
+  --padding-start: 0px;
+  --padding-end: 0px;
 }
