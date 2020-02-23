@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { Plugins, StatusBarStyle } from '@capacitor/core';
 import { Platform } from '@ionic/angular';
 
+import { TranslateService } from '@ngx-translate/core';
+
 import * as PluginsLibrary from '@jeepq/capacitor';
 import { Storage } from '@ionic/storage';
 
@@ -19,7 +21,8 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private router: Router,
-    private storage: Storage
+    private storage: Storage,
+    private translate: TranslateService
   ) {
     this.initializeApp();
   }
@@ -35,6 +38,7 @@ export class AppComponent {
    }
 
   initializeApp() {
+    this.translate.setDefaultLang('en');
     this.platform.ready().then(() => {
     });
   }
