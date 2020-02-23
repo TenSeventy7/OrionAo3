@@ -16,8 +16,12 @@
 
 .ar-header-droid {
   --min-height: 64px;
-  padding-left: 24px;
-  padding-right: 24px;
+}
+.ar-header-droid-icon {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  overflow: visible !important;
+  z-index: 21 !important;
 }
 
 .ar-header-droid-icon {
@@ -37,6 +41,10 @@
   margin-top: -12px;
 }
 
+.md ion-list {
+  padding-left: 8px;
+  padding-right: 8px;
+}
 .md ion-slides {
   --padding-start: 0px;
   --padding-end: 0px;
