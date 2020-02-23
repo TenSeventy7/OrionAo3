@@ -6,11 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { TabPage } from './tab.page';
 import { CardSliderComponentModule } from '../../components/ar-card-slider/card-slider.module';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    TranslateModule.forChild(),
     CardSliderComponentModule,
     RouterModule.forChild([{ path: '', component: TabPage }])
   ],

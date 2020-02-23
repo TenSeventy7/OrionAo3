@@ -1,14 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="ar-ios">
     <ion-title>
-      Discover
+      {{ 'ar-home-discover.header-title' | translate }}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
   <ion-header class="ar-header-ios-container" collapse="condense">
     <ion-toolbar>
-      <ion-title class="ar-header-title" size="large">Discover</ion-title>
+      <ion-title class="ar-header-title" size="large">{{ 'ar-home-discover.header-title' | translate }}</ion-title>
     <ion-buttons class="ar-header-ios-icon-container" slot="secondary">
       <ion-button fill="clear" class="no-ripple">
         <ion-icon class="ar-header-ios-icon ar-ic-arion-header" slot="icon-only"></ion-icon>
@@ -24,7 +24,7 @@
       </ion-button>
     </ion-buttons>
       
-    <ion-title color="primary">Discover</ion-title>
+    <ion-title color="primary">{{ 'ar-home-discover.header-title' | translate }}</ion-title>
 
     <ion-buttons slot="primary">
       <ion-button mode="md" fill="clear" color="primary" routerLink="/home/account">
@@ -33,7 +33,7 @@
       </ion-buttons>
   </ion-toolbar>
 
-  <ar-card-slider name="Latest Works"></ar-card-slider>
-  <ar-card-slider name="Recently Read"></ar-card-slider>
-  <ar-card-slider name="For You"></ar-card-slider>
+  <ar-card-slider name="{{ 'ar-home-discover.personal-recommendations' | translate }}"></ar-card-slider>
+  <ar-card-slider name="{{ 'ar-home-discover.community-recommendations' | translate }}"></ar-card-slider>
+  <ar-card-slider name="{{ 'ar-home-discover.recently-read' | translate }}"></ar-card-slider>
 </ion-content>

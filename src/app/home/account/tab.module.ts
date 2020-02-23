@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { TabPage } from './tab.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
+import { TranslateModule } from '@ngx-translate/core';
 import { LoginComponent } from '../../components/ar-ao3-login/login.component';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { LoginComponent } from '../../components/ar-ao3-login/login.component';
   imports: [
     IonicModule,
     CommonModule,
+    TranslateModule.forChild(),
     FormsModule,
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: TabPage }])

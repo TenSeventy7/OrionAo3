@@ -1,0 +1,45 @@
+{
+  "ar-home-discover": {
+    "header-title": "Discover",
+    "personal-recommendations": "For You",
+    "community-recommendations": "Community Recommendations",
+    "recently-read": "Recently Read"
+  },
+  "ar-home-browse": {
+    "header-title": "Browse"
+  },
+  "ar-home-library": {
+    "header-title": "Library"
+  },
+  "ar-home-account": {
+    "header-title": "Account",
+    "not-logged-in": "Not logged in",
+    "not-logged-in-description": "Log in to your account",
+
+	  "profile": {
+	    "title": "Profile",
+	    "dashboard": "Dashboard",
+	    "subscriptions": "Subscriptions",
+	    "history": "History",
+	    "messages": "Messages"
+	  },
+
+	  "settings": {
+	    "title": "Settings",
+	    "account": "Account settings",
+	    "app": "App settings",
+	    "feedback": "Send Feedback",
+	    "about": "About Orion",
+	    "tos": "Terms of Service",
+	    "privacy-policy": "Privacy Policy"
+	  }
+  },
+
+  "ar-ao3-login": {
+    "username": "User name",
+    "password": "Password",
+    "recovery": "Forgot password?",
+    "sign-in": "Sign in",
+    "sign-up": "Don't have an account?"
+  }
+}
